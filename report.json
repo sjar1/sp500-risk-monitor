@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-11-17T16:35:35.899990+00:00",
+  "updated_at": "2026-11-17T16:48:38.282972+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
   "scan_errors": [],
   "forecast_status": "not_calibrated",
   "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
+  "changes": {
+    "entered_top10": [],
+    "exited_top10": [],
+    "early_warnings": [],
+    "new_filings": 0,
+    "baseline_available": false
+  },
   "companies": [
     {
       "ticker": "SKYD",
@@ -54,7 +61,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926112829/tm2626659d2_8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "KHC",
@@ -94,7 +106,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000067/khc-20261002.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "GM",
@@ -125,7 +142,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/1467858/000119312526437768/d128847d8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "HLT",
@@ -147,7 +169,12 @@
           "score": 45,
           "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000045/hlt-20261020.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "VYLR",
@@ -180,7 +207,12 @@
           "score": 27,
           "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526417083/d332956d8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "AES",
@@ -213,7 +245,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000153/aes-20260914.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "AMCR",
@@ -237,7 +274,12 @@
           "score": 27,
           "url": "https://www.sec.gov/Archives/edgar/data/1748790/000110465926096303/tm2622721d1_8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "RMD",
@@ -261,7 +303,12 @@
           "score": 27,
           "url": "https://www.sec.gov/Archives/edgar/data/943819/000119312526354154/d292919d8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "KMB",
@@ -295,7 +342,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/55785/000110465926112571/tm2626685d1_8k.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "MKC",
@@ -326,7 +378,12 @@
           "score": 10,
           "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000305/mkc-20260825.htm"
         }
-      ]
+      ],
+      "previous_score": null,
+      "score_change": null,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     }
   ]
 }
