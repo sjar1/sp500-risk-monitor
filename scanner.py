@@ -13,7 +13,7 @@ from html import unescape
 # S&P 500 Investigative Risk Monitor - Version 3
 # Standard Python library only.
 
-AGENT = os.getenv("SEC_USER_AGENT", "SP500RiskMonitor research contact research@example.org").strip()
+AGENT = os.getenv("SEC_USER_AGENT", "").strip()
 
 if not AGENT or "@" not in AGENT or "example.com" in AGENT or "example.org" in AGENT:
     raise SystemExit(
