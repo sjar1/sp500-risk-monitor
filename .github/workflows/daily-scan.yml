@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: daily-sec-scan
@@ -56,3 +57,35 @@ jobs:
             done
           fi
 
+
+      - name: Publish early warnings as GitHub issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          with open("report.json", encoding="utf-8") as file:
+              report = json.load(file)
+          changes = report.get("changes", {})
+          alerts = changes.get("early_warnings", [])
+          if not alerts:
+              print("No new early warning alerts.")
+              raise SystemExit(0)
+          date = report["updated_at"][:10]
+          title = f"SEC early warnings — {date}"
+          lines = ["Automated SEC filing review-priority alerts (not allegations or trading signals).", ""]
+          for company in report["companies"]:
+              if company["ticker"] not in alerts:
+                  continue
+              lines.append(f"### {company['ticker']} — {company['company']}")
+              lines.append(f"Review score: {company['risk_score']}; change: {company.get('score_change')}")
+              for item in company.get("new_filings", []):
+                  lines.append(f"- [{item['date']} {item['form']} — {item['description']}]({item['url']})")
+              lines.append("")
+          repo = os.environ["GITHUB_REPOSITORY"]
+          existing = subprocess.run(["gh", "issue", "list", "--repo", repo, "--state", "all", "--search", title, "--json", "title"], capture_output=True, text=True, check=True)
+          if any(issue["title"] == title for issue in json.loads(existing.stdout)):
+              print("Today's alert issue already exists.")
+          else:
+              subprocess.run(["gh", "issue", "create", "--repo", repo, "--title", title, "--body", "\\n".join(lines)], check=True)
+          PY
