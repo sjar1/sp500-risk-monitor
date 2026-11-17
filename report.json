@@ -1,0 +1,332 @@
+{
+  "updated_at": "2026-11-16T22:09:56.170262+00:00",
+  "report_type": "SEC investigative screening v3",
+  "status": "screening_only",
+  "companies_scanned": 503,
+  "scan_errors": [],
+  "forecast_status": "not_calibrated",
+  "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
+  "companies": [
+    {
+      "ticker": "SKYD",
+      "company": "Skydance",
+      "cik": 2041610,
+      "risk_level": "Elevated review priority",
+      "risk_score": 49,
+      "summary": "Review disclosed exchange listing compliance notice. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-09-25",
+          "form": "8-K",
+          "items": "3.01,7.01,9.01",
+          "description": "Exchange listing compliance notice",
+          "text_signals": [],
+          "score": 45,
+          "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926111034/tm2610616d11_8k.htm"
+        },
+        {
+          "date": "2026-10-06",
+          "form": "8-K",
+          "items": "1.01,1.02,2.01,2.03,3.02,5.02,5.03,5.07,7.01,9.01",
+          "description": "Termination of a material agreement; Director or executive change",
+          "text_signals": [],
+          "score": 16,
+          "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926113913/tm2626659d7_8k.htm"
+        },
+        {
+          "date": "2026-10-06",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926114113/tm2626659d9_8k.htm"
+        },
+        {
+          "date": "2026-10-01",
+          "form": "8-K",
+          "items": "5.02,7.01,8.01,9.01",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926112829/tm2626659d2_8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "KHC",
+      "company": "Kraft Heinz",
+      "cik": 1637459,
+      "risk_level": "Elevated review priority",
+      "risk_score": 47,
+      "summary": "Review disclosed exchange listing compliance notice. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-08-26",
+          "form": "8-K",
+          "items": "3.01,7.01,9.01",
+          "description": "Exchange listing compliance notice",
+          "text_signals": [],
+          "score": 45,
+          "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000057/khc-20260824.htm"
+        },
+        {
+          "date": "2026-11-04",
+          "form": "8-K",
+          "items": "5.02,7.01,9.01",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000079/khc-20261031.htm"
+        },
+        {
+          "date": "2026-10-06",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000067/khc-20261002.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "GM",
+      "company": "General Motors",
+      "cik": 1467858,
+      "risk_level": "Elevated review priority",
+      "risk_score": 46,
+      "summary": "Review disclosed exchange listing compliance notice. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-10-27",
+          "form": "8-K",
+          "items": "3.01,5.03,7.01,9.01",
+          "description": "Exchange listing compliance notice",
+          "text_signals": [],
+          "score": 45,
+          "url": "https://www.sec.gov/Archives/edgar/data/1467858/000119312526432602/d53522d8k.htm"
+        },
+        {
+          "date": "2026-10-29",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/1467858/000119312526437768/d128847d8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "HLT",
+      "company": "Hilton Worldwide",
+      "cik": 1585689,
+      "risk_level": "Elevated review priority",
+      "risk_score": 45,
+      "summary": "Review disclosed exchange listing compliance notice. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-10-20",
+          "form": "8-K",
+          "items": "3.01,7.01,9.01",
+          "description": "Exchange listing compliance notice",
+          "text_signals": [],
+          "score": 45,
+          "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000045/hlt-20261020.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "VYLR",
+      "company": "Vylor",
+      "cik": 2128626,
+      "risk_level": "Elevated review priority",
+      "risk_score": 33,
+      "summary": "Review disclosed late periodic filing notice. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-11-10",
+          "form": "NT 10-Q",
+          "items": "",
+          "description": "Late periodic filing notice",
+          "text_signals": [],
+          "score": 30,
+          "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526455591/d107437dnt10q.htm"
+        },
+        {
+          "date": "2026-10-07",
+          "form": "8-K",
+          "items": "2.01,2.03,3.02,4.01,5.02,9.01",
+          "description": "Change in certifying accountant; Director or executive change",
+          "text_signals": [
+            "Resignation reference"
+          ],
+          "score": 27,
+          "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526417083/d332956d8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "AES",
+      "company": "AES Corporation",
+      "cik": 874761,
+      "risk_level": "Routine review",
+      "risk_score": 28,
+      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-07-27",
+          "form": "8-K",
+          "items": "4.01,9.01",
+          "description": "Change in certifying accountant",
+          "text_signals": [
+            "Internal control material weakness"
+          ],
+          "score": 27,
+          "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000138/aes-20260721.htm"
+        },
+        {
+          "date": "2026-09-16",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000153/aes-20260914.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "AMCR",
+      "company": "Amcor",
+      "cik": 1748790,
+      "risk_level": "Routine review",
+      "risk_score": 27,
+      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-08-14",
+          "form": "8-K",
+          "items": "4.01,9.01",
+          "description": "Change in certifying accountant",
+          "text_signals": [
+            "Resignation reference"
+          ],
+          "score": 27,
+          "url": "https://www.sec.gov/Archives/edgar/data/1748790/000110465926096303/tm2622721d1_8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "RMD",
+      "company": "ResMed",
+      "cik": 943819,
+      "risk_level": "Routine review",
+      "risk_score": 27,
+      "summary": "Review disclosed change in certifying accountant; director or executive change. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-08-17",
+          "form": "8-K",
+          "items": "4.01,5.02,7.01,9.01",
+          "description": "Change in certifying accountant; Director or executive change",
+          "text_signals": [
+            "Disagreement reference"
+          ],
+          "score": 27,
+          "url": "https://www.sec.gov/Archives/edgar/data/943819/000119312526354154/d292919d8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "KMB",
+      "company": "Kimberly-Clark",
+      "cik": 55785,
+      "risk_level": "Routine review",
+      "risk_score": 25,
+      "summary": "Review disclosed restructuring or exit costs; director or executive change. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-11-02",
+          "form": "8-K",
+          "items": "2.01,2.05,5.02,5.03,7.01,9.01",
+          "description": "Restructuring or exit costs; Director or executive change",
+          "text_signals": [
+            "Disagreement reference",
+            "Resignation reference"
+          ],
+          "score": 24,
+          "url": "https://www.sec.gov/Archives/edgar/data/55785/000110465926120990/tm2628636d1_8k.htm"
+        },
+        {
+          "date": "2026-10-01",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/55785/000110465926112571/tm2626685d1_8k.htm"
+        }
+      ]
+    },
+    {
+      "ticker": "MKC",
+      "company": "McCormick & Company",
+      "cik": 63754,
+      "risk_level": "Routine review",
+      "risk_score": 25,
+      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-09-28",
+          "form": "8-K",
+          "items": "4.01,9.01",
+          "description": "Change in certifying accountant",
+          "text_signals": [],
+          "score": 24,
+          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000322/mkc-20260924.htm"
+        },
+        {
+          "date": "2026-08-28",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000305/mkc-20260825.htm"
+        }
+      ]
+    }
+  ]
+}
