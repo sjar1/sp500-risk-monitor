@@ -363,7 +363,8 @@ def main():
     except FileNotFoundError:
         history = {"schema_version": 1, "snapshots": []}
 
-    previous = history["snapshots"][-1] if history["snapshots"] else None
+    prior_days = [entry for entry in history["snapshots"] if entry.get("date") < now.date().isoformat()]
+    previous = prior_days[-1] if prior_days else None
     old_scores = previous.get("scores", {}) if previous else {}
     old_top = set(previous.get("top10", [])) if previous else set()
     old_evidence = previous.get("evidence_urls", {}) if previous else {}
