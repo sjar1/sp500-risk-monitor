@@ -352,6 +352,62 @@ def main():
         if company["risk_score"] > 0
     ][:10]
 
+    # Compare with the most recent successful snapshot. Keep full-universe
+    # scores so companies can enter the watchlist without losing history.
+    history_path = "history.json"
+    try:
+        with open(history_path, encoding="utf-8") as source:
+            history = json.load(source)
+        if not isinstance(history, dict) or not isinstance(history.get("snapshots"), list):
+            raise ValueError("Invalid history structure")
+    except FileNotFoundError:
+        history = {"schema_version": 1, "snapshots": []}
+
+    previous = history["snapshots"][-1] if history["snapshots"] else None
+    old_scores = previous.get("scores", {}) if previous else {}
+    old_top = set(previous.get("top10", [])) if previous else set()
+    old_evidence = previous.get("evidence_urls", {}) if previous else {}
+    current_top = [company["ticker"] for company in top10]
+    for company in top10:
+        ticker = company["ticker"]
+        old = old_scores.get(ticker)
+        company["previous_score"] = old
+        company["score_change"] = company["risk_score"] - old if old is not None else None
+        company["new_to_top10"] = bool(previous and ticker not in old_top)
+        prior_urls = set(old_evidence.get(ticker, []))
+        company["new_filings"] = [
+            item for item in company["evidence"] if item["url"] not in prior_urls
+        ] if previous else []
+        # An alert is a heuristic change signal, not a finding of misconduct.
+        company["early_warning"] = bool(
+            previous and (
+                (company["score_change"] is not None and company["score_change"] >= 15)
+                or company["new_to_top10"]
+                or any(item["score"] >= 45 for item in company["new_filings"])
+            )
+        )
+
+    report_changes = {
+        "entered_top10": sorted(set(current_top) - old_top) if previous else [],
+        "exited_top10": sorted(old_top - set(current_top)) if previous else [],
+        "early_warnings": [c["ticker"] for c in top10 if c["early_warning"]],
+        "new_filings": sum(len(c["new_filings"]) for c in top10),
+        "baseline_available": bool(previous),
+    }
+    snapshot = {
+        "date": now.date().isoformat(),
+        "updated_at": now.isoformat(),
+        "scores": {c["ticker"]: c["risk_score"] for c in results},
+        "top10": current_top,
+        "evidence_urls": {c["ticker"]: [e["url"] for e in c["evidence"]] for c in results},
+    }
+    # One observation per UTC date; re-runs replace that day's snapshot.
+    history["snapshots"] = [
+        entry for entry in history["snapshots"]
+        if entry.get("date") != snapshot["date"]
+    ] + [snapshot]
+    history["snapshots"] = sorted(history["snapshots"], key=lambda x: x["date"])[-180:]
+
     report = {
         "updated_at": now.isoformat(),
         "report_type": "SEC investigative screening v3",
@@ -364,6 +420,7 @@ def main():
             "filing items and unverified text signals; "
             "not allegations or price forecasts."
         ),
+        "changes": report_changes,
         "companies": top10
     }
 
@@ -378,6 +435,10 @@ def main():
         "report.json.tmp",
         "report.json"
     )
+
+    with open("history.json.tmp", "w", encoding="utf-8") as file:
+        json.dump(history, file, separators=(",", ":"))
+    os.replace("history.json.tmp", "history.json")
 
     print(
         "Report written with",
