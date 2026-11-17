@@ -18,3 +18,12 @@ The bot scores SEC filing items and certain text matches as *research priorities
 
 ## Provenance
 Migrated from `sjar1/sp500-investigative-monitor` on 2026-11-17, including the prior scanner, dashboard, and last published report.
+
+## Daily historical monitoring and alerts
+Each successful weekday scan updates `report.json` and `history.json`. The latter retains up to 180 daily snapshots of **all scanned companies' scores**, Top 10 membership, and SEC evidence URLs. The dashboard shows risk score trends, watchlist entrants/exits, newly qualifying filings and source links.
+
+**Early warning criteria:** a company enters the Top 10, its review score increases by 15 or more points since the previous day, or it has a newly qualifying filing scored at least 45. These are screening heuristics, **not allegations or calibrated probabilities**. New warnings generate a GitHub Issue titled `SEC early warnings — YYYY-MM-DD` in this repository. Enable GitHub notifications for Issues (Watch → Custom → Issues) to receive GitHub notifications.
+
+The initial history baseline is from the first successful report, containing only the original Top 10. Full-universe historical scores start after the next scanner run. Same-day reruns overwrite that day's snapshot; comparisons are made to the prior UTC day.
+
+The older `sp500-investigative-monitor` repository should only be deleted after the replacement dashboard, daily scan and alert issues are confirmed working. Deletion is not performed automatically.
