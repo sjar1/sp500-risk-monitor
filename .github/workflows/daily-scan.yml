@@ -3,6 +3,10 @@ name: Daily S&P 500 SEC Scan
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-scan.yml'
   schedule:
     - cron: "20 12 * * 1-5"
 
