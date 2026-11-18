@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T16:48:38.282972+00:00",
+  "updated_at": "2026-11-18T20:42:17.869763+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
@@ -7,11 +7,17 @@
   "forecast_status": "not_calibrated",
   "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
   "changes": {
-    "entered_top10": [],
-    "exited_top10": [],
-    "early_warnings": [],
-    "new_filings": 0,
-    "baseline_available": false
+    "entered_top10": [
+      "TXT"
+    ],
+    "exited_top10": [
+      "MKC"
+    ],
+    "early_warnings": [
+      "TXT"
+    ],
+    "new_filings": 1,
+    "baseline_available": true
   },
   "companies": [
     {
@@ -62,8 +68,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926112829/tm2626659d2_8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 49,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -107,8 +113,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000067/khc-20261002.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 47,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -143,8 +149,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1467858/000119312526437768/d128847d8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 46,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -170,8 +176,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000045/hlt-20261020.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 45,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -208,11 +214,48 @@
           "url": "https://www.sec.gov/Archives/edgar/data/2128626/000119312526417083/d332956d8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 33,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
+    },
+    {
+      "ticker": "TXT",
+      "company": "Textron",
+      "cik": 217346,
+      "risk_level": "Elevated review priority",
+      "risk_score": 30,
+      "summary": "Review disclosed material impairment. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-11-18",
+          "form": "8-K",
+          "items": "1.01,2.06,7.01,8.01,9.01",
+          "description": "Material impairment",
+          "text_signals": [],
+          "score": 30,
+          "url": "https://www.sec.gov/Archives/edgar/data/217346/000110465926129345/tm2629751d1_8k.htm"
+        }
+      ],
+      "previous_score": 0,
+      "score_change": 30,
+      "new_to_top10": true,
+      "new_filings": [
+        {
+          "date": "2026-11-18",
+          "form": "8-K",
+          "items": "1.01,2.06,7.01,8.01,9.01",
+          "description": "Material impairment",
+          "text_signals": [],
+          "score": 30,
+          "url": "https://www.sec.gov/Archives/edgar/data/217346/000110465926129345/tm2629751d1_8k.htm"
+        }
+      ],
+      "early_warning": true
     },
     {
       "ticker": "AES",
@@ -246,8 +289,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000153/aes-20260914.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 28,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -275,8 +318,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1748790/000110465926096303/tm2622721d1_8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 27,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -304,8 +347,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/943819/000119312526354154/d292919d8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 27,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
@@ -343,44 +386,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/55785/000110465926112571/tm2626685d1_8k.htm"
         }
       ],
-      "previous_score": null,
-      "score_change": null,
-      "new_to_top10": false,
-      "new_filings": [],
-      "early_warning": false
-    },
-    {
-      "ticker": "MKC",
-      "company": "McCormick & Company",
-      "cik": 63754,
-      "risk_level": "Routine review",
-      "risk_score": 25,
-      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
-      "event_30d": null,
-      "drop_30d": null,
-      "drop_90d": null,
-      "evidence": [
-        {
-          "date": "2026-09-28",
-          "form": "8-K",
-          "items": "4.01,9.01",
-          "description": "Change in certifying accountant",
-          "text_signals": [],
-          "score": 24,
-          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000322/mkc-20260924.htm"
-        },
-        {
-          "date": "2026-08-28",
-          "form": "8-K",
-          "items": "5.02",
-          "description": "Director or executive change",
-          "text_signals": [],
-          "score": 10,
-          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000305/mkc-20260825.htm"
-        }
-      ],
-      "previous_score": null,
-      "score_change": null,
+      "previous_score": 25,
+      "score_change": 0,
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
