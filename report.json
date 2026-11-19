@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T20:42:17.869763+00:00",
+  "updated_at": "2026-11-19T20:47:52.048909+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
@@ -7,16 +7,10 @@
   "forecast_status": "not_calibrated",
   "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
   "changes": {
-    "entered_top10": [
-      "TXT"
-    ],
-    "exited_top10": [
-      "MKC"
-    ],
-    "early_warnings": [
-      "TXT"
-    ],
-    "new_filings": 1,
+    "entered_top10": [],
+    "exited_top10": [],
+    "early_warnings": [],
+    "new_filings": 0,
     "baseline_available": true
   },
   "companies": [
@@ -241,21 +235,11 @@
           "url": "https://www.sec.gov/Archives/edgar/data/217346/000110465926129345/tm2629751d1_8k.htm"
         }
       ],
-      "previous_score": 0,
-      "score_change": 30,
-      "new_to_top10": true,
-      "new_filings": [
-        {
-          "date": "2026-11-18",
-          "form": "8-K",
-          "items": "1.01,2.06,7.01,8.01,9.01",
-          "description": "Material impairment",
-          "text_signals": [],
-          "score": 30,
-          "url": "https://www.sec.gov/Archives/edgar/data/217346/000110465926129345/tm2629751d1_8k.htm"
-        }
-      ],
-      "early_warning": true
+      "previous_score": 30,
+      "score_change": 0,
+      "new_to_top10": false,
+      "new_filings": [],
+      "early_warning": false
     },
     {
       "ticker": "AES",
