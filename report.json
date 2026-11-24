@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T20:32:26.511003+00:00",
+  "updated_at": "2026-11-24T00:04:16.782130+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
@@ -10,7 +10,7 @@
     "entered_top10": [],
     "exited_top10": [],
     "early_warnings": [],
-    "new_filings": 1,
+    "new_filings": 0,
     "baseline_available": true
   },
   "companies": [
@@ -311,20 +311,10 @@
           "url": "https://www.sec.gov/Archives/edgar/data/943819/000119312526468603/d44582d8k.htm"
         }
       ],
-      "previous_score": 27,
-      "score_change": 1,
+      "previous_score": 28,
+      "score_change": 0,
       "new_to_top10": false,
-      "new_filings": [
-        {
-          "date": "2026-11-19",
-          "form": "8-K",
-          "items": "5.02,5.07,9.01",
-          "description": "Director or executive change",
-          "text_signals": [],
-          "score": 10,
-          "url": "https://www.sec.gov/Archives/edgar/data/943819/000119312526468603/d44582d8k.htm"
-        }
-      ],
+      "new_filings": [],
       "early_warning": false
     },
     {
