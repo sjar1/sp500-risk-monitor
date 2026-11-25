@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T22:36:13.845205+00:00",
+  "updated_at": "2026-11-25T21:50:19.146309+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
@@ -7,9 +7,15 @@
   "forecast_status": "not_calibrated",
   "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
   "changes": {
-    "entered_top10": [],
-    "exited_top10": [],
-    "early_warnings": [],
+    "entered_top10": [
+      "MKC"
+    ],
+    "exited_top10": [
+      "AES"
+    ],
+    "early_warnings": [
+      "MKC"
+    ],
     "new_filings": 0,
     "baseline_available": true
   },
@@ -242,44 +248,6 @@
       "early_warning": false
     },
     {
-      "ticker": "AES",
-      "company": "AES Corporation",
-      "cik": 874761,
-      "risk_level": "Routine review",
-      "risk_score": 28,
-      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
-      "event_30d": null,
-      "drop_30d": null,
-      "drop_90d": null,
-      "evidence": [
-        {
-          "date": "2026-07-27",
-          "form": "8-K",
-          "items": "4.01,9.01",
-          "description": "Change in certifying accountant",
-          "text_signals": [
-            "Internal control material weakness"
-          ],
-          "score": 27,
-          "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000138/aes-20260721.htm"
-        },
-        {
-          "date": "2026-09-16",
-          "form": "8-K",
-          "items": "5.02",
-          "description": "Director or executive change",
-          "text_signals": [],
-          "score": 10,
-          "url": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000153/aes-20260914.htm"
-        }
-      ],
-      "previous_score": 28,
-      "score_change": 0,
-      "new_to_top10": false,
-      "new_filings": [],
-      "early_warning": false
-    },
-    {
       "ticker": "RMD",
       "company": "ResMed",
       "cik": 943819,
@@ -384,6 +352,42 @@
       "new_to_top10": false,
       "new_filings": [],
       "early_warning": false
+    },
+    {
+      "ticker": "MKC",
+      "company": "McCormick & Company",
+      "cik": 63754,
+      "risk_level": "Routine review",
+      "risk_score": 25,
+      "summary": "Review disclosed change in certifying accountant. This is not evidence of wrongdoing.",
+      "event_30d": null,
+      "drop_30d": null,
+      "drop_90d": null,
+      "evidence": [
+        {
+          "date": "2026-09-28",
+          "form": "8-K",
+          "items": "4.01,9.01",
+          "description": "Change in certifying accountant",
+          "text_signals": [],
+          "score": 24,
+          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000322/mkc-20260924.htm"
+        },
+        {
+          "date": "2026-08-28",
+          "form": "8-K",
+          "items": "5.02",
+          "description": "Director or executive change",
+          "text_signals": [],
+          "score": 10,
+          "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000305/mkc-20260825.htm"
+        }
+      ],
+      "previous_score": 25,
+      "score_change": 0,
+      "new_to_top10": true,
+      "new_filings": [],
+      "early_warning": true
     }
   ]
 }
