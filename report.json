@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T21:50:19.146309+00:00",
+  "updated_at": "2026-11-26T21:44:08.052553+00:00",
   "report_type": "SEC investigative screening v3",
   "status": "screening_only",
   "companies_scanned": 503,
@@ -7,15 +7,9 @@
   "forecast_status": "not_calibrated",
   "methodology": "Heuristic review priorities based on SEC filing items and unverified text signals; not allegations or price forecasts.",
   "changes": {
-    "entered_top10": [
-      "MKC"
-    ],
-    "exited_top10": [
-      "AES"
-    ],
-    "early_warnings": [
-      "MKC"
-    ],
+    "entered_top10": [],
+    "exited_top10": [],
+    "early_warnings": [],
     "new_filings": 0,
     "baseline_available": true
   },
@@ -385,9 +379,9 @@
       ],
       "previous_score": 25,
       "score_change": 0,
-      "new_to_top10": true,
+      "new_to_top10": false,
       "new_filings": [],
-      "early_warning": true
+      "early_warning": false
     }
   ]
 }
